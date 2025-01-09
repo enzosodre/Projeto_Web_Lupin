@@ -1,0 +1,15 @@
+<%- include('cabecalho_form') %>
+
+<ul class="list-group">
+    <% for(let i = 0; i < usuariosResultado.length; i++) { %>
+    <li class="list-group-item fonte">
+      <%= usuariosResultado[i].id %> - <%= usuariosResultado[i].nome %> - <%= usuariosResultado[i].email %>
+      <% if (isAdmin) { %>
+        <a type="button" class="button_menor" href="/editar_usuario/<%= usuariosResultado[i].id %>">Editar</a>
+        <button type="button" class="button_menor" onclick="confirmarExclusaoUsuario('<%= usuariosResultado[i].id %>')">Apagar</button>
+      <% } %>
+    </li><br>
+    <% } %>
+</ul>
+
+<%- include('rodape') %>

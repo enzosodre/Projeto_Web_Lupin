@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <link rel="shortcut icon" type="image/png" href="https://img2.gratispng.com/20180524/gqt/kisspng-top-hat-logo-brazil-preciso-me-encontrar-5b072e89d721f6.3116059415271973218812.jpg"/>
+    <link rel="stylesheet" href="/styles.css" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+</head>
+<body id="checkout-page">
+    
+  <header> <!-- Representa o cabeçalho da página -->
+    <a href="/index"><img id="logo" src="/estilos/logo_lupin.png" alt="imagem do logo do Lupin"></a> <!-- Logo do Lupin, linkando para a página inicial -->
+    <nav> <!-- Barra de navegação principal -->
+        <ul> <!-- Lista não ordenada de links de navegação -->
+            <li><a href="/index">Home</a></li> <!-- Link para a página inicial -->
+            <li>
+                <select id="temporada" onchange="changeSeason()"> <!-- Menu suspenso para seleção de temporada -->
+                    <option>Temporada</option> <!-- Opção padrão -->
+                    <option value="/temporada1">Temporada 1</option> <!-- Opção para a temporada 1 -->
+                    <option value="/temporada2">Temporada 2</option> <!-- Opção para a temporada 2 -->
+                    <option value="/temporada3">Temporada 3</option> <!-- Opção para a temporada 3 -->
+                </select>
+            </li>
+            <li><a href="/elenco">Elenco</a></li> <!-- Link para a página do elenco -->
+            <li><a href="/comentarios">Comentários</a></li> <!-- Link para a página de comentários -->
+            <li><a href="/endereco">Brinde</a></li> <!-- Link para a página de cadastro -->
+            <% if (locals.usuario) { %> <!-- Verifica se há um usuário na sessão -->
+              <% if (locals.usuario.isAdmin) { %>
+                <li><a href="/listar_usuario">Usuários</a></li>
+              <% } %>
+              <li><a href="/logout">Sair</a></li> <!-- Exibe o link de logout -->
+            <% } else { %>
+              <li><a href="/login">Login</a></li>
+            <% } %>
+        </ul>
+    </nav>
+  </header>
+  <script>
+    function changeSeason() {
+      const season = document.getElementById('temporada').value;
+      if (season) {
+          window.location.href = season;
+      }
+    }
+  </script>

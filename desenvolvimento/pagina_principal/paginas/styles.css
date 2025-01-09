@@ -1,0 +1,940 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li select {
+    border: none;
+    list-style: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li a {
+    list-style: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: #FF6400;
+}
+
+li select:hover {
+    color: #FF6400;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+.p {
+    margin-top: 10px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: #FF6400;
+}
+
+.p_branco {
+    margin-top: 10px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: #FF6400;
+    background-color: #fff;
+}
+
+.sublinhado {
+    text-decoration: none;
+}
+
+.fonte {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+#banner {
+    /**background-image: url('https://wallpapercave.com/wp/wp8345840.jpg');**/
+    background-image: url('estilos/elenco/banner.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 1000px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 80%)
+}
+
+#trailer-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trailer {
+    width: 50%;
+    margin-left: 20px;
+    padding: 20px;
+}
+
+#sinopse {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.description {
+    color: white;
+    font-size: 19px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    width: 70%;
+}
+
+.button {
+    width: 200px;
+    height: 60px;
+    background-color: #D21617;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #ffffff;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    text-shadow: 1px 1px black;
+}
+
+.titulo{
+    border-left: #FF6400 4px solid;
+    margin-left: 70px ;
+    padding-left: 10px;
+    font-size: 30px;
+    color: white;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    transition: .5s;
+}
+
+.titulo:hover{
+    border-left: #FF6400 6px solid;
+    font-size: 40px;
+    transition: .5s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.banner-1 {
+    background-image: url('estilos/elenco/principal_lupin.jpg');
+}
+
+.banner-111 {
+    background-image: url('estilos/elenco/omar_sy.jpg');
+}
+
+.banner-2 {
+    background-image: url('estilos/elenco/claire_principal.jpg');
+}
+
+.banner-222 {
+    background-image: url('estilos/elenco/ludivine.jpg');
+}
+
+.banner-3 {
+    background-image: url('estilos/elenco/hubert_principal.jpg');
+}
+
+.banner-33 {
+    background-image: url('estilos/elenco/herve_pierre.jpg');
+}
+
+.banner-4 {
+    background-image: url('estilos/elenco/fargass.jpg');
+}
+
+.banner-5 {
+    background-image: url('estilos/elenco/etan_simon.jpg');
+}
+
+.banner-6 {
+    background-image: url('estilos/elenco/naky_sy_savane.jpg');
+}
+
+.banner-7 {
+    background-image: url('estilos/elenco/mamadou_haidara.jpg');
+}
+
+/*.banner-7 {
+    background-image: url('https://static.wixstatic.com/media/50b4f7_4b85b8eee23f40c097025529aef15bbb~mv2.jpg/v1/crop/x_0,y_140,w_1733,h_2383/fill/w_560,h_668,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/_J1A3200_edited.jpg');
+}*/
+
+.banner-8 {
+    background-image: url('estilos/elenco/juliette_pellegrini.jpg');
+}
+
+.banner-9 {
+    background-image: url('estilos/elenco/anne_pellegrini.jpg');
+}
+
+.banner-10 {
+    background-image: url('estilos/elenco/benjamin_ferel.jpg');
+}
+
+.banner-11 {
+    background-image: url('estilos/elenco/youssef.jpg');
+}
+
+/*.banner-12 {
+    background-image: url('https://m.media-amazon.com/images/M/MV5BOGM3NGRmNDctMWJmMi00ZmY3LTk1OTYtNmVjNzU0ZWFhZTc3XkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_.jpg');
+}*/
+
+.banner-12 {
+    background-image: url('estilos/elenco/cpt_romain.jpg');
+}
+
+.banner-13 {
+    background-image: url('estilos/elenco/lt_sofia.jpg');
+}
+
+.banner-14 {
+    background-image: url('estilos/elenco/gabriel_dumont_velho.jpg');
+}
+
+.banner-15 {
+    background-image: url('estilos/elenco/claire_jovem.jpg');
+}
+
+/*.banner-16 {
+    background-image: url('https://static.tvtropes.org/pmwiki/pub/images/benjamin1995.png');
+}*/
+
+.banner-16 {
+    background-image: url('estilos/elenco/benjamin_ferel.jpg');
+}
+
+.banner-17 {
+    background-image: url('estilos/elenco/ea_bonneau.jpg');
+}
+
+.banner-18 {
+    background-image: url('estilos/elenco/gabriel_dumont_jovem.jpg');
+}
+
+.banner-19 {
+    background-image: url('estilos/elenco/anne_benoit.jpg');
+}
+
+.banner-20 {
+    background-image: url('estilos/elenco/adama_niane.jpg');
+}
+
+.banner-21 {
+    background-image: url('estilos/elenco/pascal_oblet.jpg');
+}
+
+.banner-22 {
+    background-image: url('estilos/elenco/fleur.jpg');
+}
+
+.banner-23 {
+    background-image: url('estilos/elenco/jean_1998.jpg');
+}
+
+.banner-24 {
+    background-image: url('estilos/elenco/jean_2021.jpg');
+}
+
+.banner-25 {
+    background-image: url('estilos/elenco/bruno_1998.jpg');
+}
+
+.banner-26 {
+    background-image: url('estilos/elenco/bruno_2021.jpg');
+}
+
+.banner-27 {
+    background-image: url('https://pbs.twimg.com/media/GBKT-oGbwAEthIL.jpg:large');
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: white;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.star {
+    width: 20px;
+    /*background-color: rgb(34, 34, 34);*/
+}
+
+.coment .user{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.coments {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 980px;
+    margin: 0 auto;
+    grid-gap: 40px;
+}
+
+.coment {
+    background-color: rgb(14, 14, 14);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px 40px;
+    /*box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.185);*/
+}
+
+.coments h3 {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    margin-bottom: 5px;
+}
+
+.name_coment {
+    color: white;
+    background-color: rgb(14, 14, 14);
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: #c7c9c8;
+    border-width: 1px;
+    border-style: solid;
+}
+
+#ep_titulo{
+    margin-top: 50px;
+    border-left: #FF6400 4px solid;
+    margin-left: 10px ;
+    padding-left: 10px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    transition: .5s;
+}
+
+#ep_titulo:hover{
+    border-left: #FF6400 6px solid;
+    font-size: 35px;
+    transition: .5s;
+}
+
+.titulo_temp{
+    border-left: #FF6400 4px solid;
+    margin-left: 20px ;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    font-size: 32px;
+    color: white;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    transition: .5s;
+}
+
+.titulo_temp:hover{
+    border-left: #FF6400 6px solid;
+    font-size: 40px;
+    margin-bottom: 30px;
+    transition: .5s;
+}
+
+.episodios-container {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    height: 150px;
+    width: 97%;
+    border-bottom: #c7c9c8;
+    border-width: 2px;
+    border-style: solid;
+    padding: 20px; /* Adiciona espaçamento interno */
+    transition: 1s;
+}
+
+.episodios-container:hover{
+    height: 160px;
+    width: 97%;
+    transition: 1s;
+}
+
+
+.numero_ep {
+    color: #c7c7c7;
+    font-size: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 40px; /* Faz com que a imagem se posicione à direita */
+    margin-right: 25px; /* Espaçamento entre o número e a imagem */
+}
+
+.duracao_ep{
+    color: #c7c7c7;
+    font-size: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 40px; /* Faz com que a imagem se posicione à direita */
+    margin-right: 25px;
+}
+
+.episodio-info {
+    color: #ffffff;
+    margin-left: 15px;
+    margin-right: 50px;
+}
+
+.imagem_ep {
+    width: 300px;
+    height: 115px;
+    margin-left: 15px; /* Faz com que a imagem se posicione à direita */
+    margin-right: 10px; /* Espaçamento entre a imagem e o texto */
+}
+
+.descricao{
+    font-size: 22px;
+    color: #c7c7c7;
+}
+
+#cad p {
+    color: white;
+    margin: auto;
+    margin-top: 5px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    /*text-align: center;*/
+}
+
+#cad input {
+    color: white;
+    margin: auto;
+    margin-top: 10px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    /*text-align: center;*/
+}
+
+:root {
+    --bg-color: #000000;
+    --secondary-bg-color: rgb(14, 14, 14);
+    --primary-color: #fff;
+    --secondary-color: #25cc88;
+    --text-color: #FF6400;
+    --border-color: #242424;
+  }
+  
+  #checkout-page {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+  }
+  
+  /* Message */
+  #fade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+  }
+  
+  #fade .spinner-border {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .hide {
+    display: none !important;
+  }
+  
+  #message {
+    width: 40%;
+  }
+  
+  .alert.alert-light p {
+    border-bottom: 1px solid #333;
+    padding: 1.2em 0;
+  }
+  
+  /* Steps */
+  /*#order-form-container {
+    padding: 1.5em;
+  }
+  
+  #steps {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border-color);
+    position: relative;
+  }
+  
+  .step {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .step i {
+    background-color: var(--secondary-bg-color);
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 0.3em;
+  }
+  
+  .step .active {
+    background-color: var(--secondary-color);
+  }
+  
+  .step p {
+    color: var(--text-color);
+  }
+  
+  .line {
+    border-bottom: 1px solid var(--border-color);
+    position: absolute;
+    top: 22.5px;
+    width: 90%;
+    left: 5%;
+    z-index: -1;
+  }*/
+  
+  /* Form header */
+  #form-header p {
+    color: var(--text-color);
+  }
+  
+  /* Form */
+  #order-form-container {
+    max-width: 700px;
+  }
+  
+  #order-form-container input,
+  #order-form-container select {
+    background-color: var(--bg-color);
+    border: 2px solid var(--border-color);
+    color: var(--primary-color);
+  }
+  
+  #order-form-container select {
+    padding: 1rem 0.75rem;
+  }
+  
+  #order-form-container label {
+    color: var(--text-color);
+  }
+  
+  #order-form-container input:disabled,
+  #order-form-container select:disabled {
+    background-color: var(--secondary-bg-color);
+    color: var(--text-color);
+  }
+  
+  #order-form-container input:focus {
+    border-color: var(--secondary-color);
+  }
+  
+  #order-form-container .form-floating > label {
+    left: 1em;
+  }
+  
+  #save-btn {
+    background-color: #25cc88;
+    border: none;
+    height: 3em;
+    width: 8em;
+    border-radius: 1.5em;
+    margin-top: 10px;
+  }
+
+
+.form {
+    max-width: 500px; /* Limite a largura do formulário */
+    margin: 0 auto; /* Centralize o formulário */
+    background-color: #000000; /* Fundo branco para o formulário */
+    padding: 20px;
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0 0 10px rgb(78, 66, 66); /* Sombra para o formulário */
+}
+
+
+.form-group-menor {
+    margin-bottom: 15px;
+}
+
+.form-group-menor label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #ffffff;
+}*/
+
+.form-group-menor input {
+    width: 100%; /* O input vai preencher 100% da largura do form-group */
+    padding: 10px;
+    border: 1px solid #666666;
+    border-radius: 5px;
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #395777;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #4d79a8;
+} 
+
+.list-group{
+    max-width: 500px; /* Limite a largura do formulário */
+    margin: 0 auto; /* Centralize o formulário */
+    background-color: #000000; /* Fundo branco para o formulário */
+    padding: 20px;
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0 0 10px rgb(78, 66, 66); /* Sombra para o formulário */
+}
+
+.button_menor {
+    width: 100px;
+    height: 40px;
+    background-color: #D21617;
+    color: rgb(255, 255, 255);
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    margin-left: 350px;
+}
+
+.button_menor:hover {
+    background-color: white;
+    color: black;
+}
+
+/*.form_especifico {
+    max-width: 500px; /* Limite a largura do formulário */
+    /*margin: 0 auto; /* Centralize o formulário */
+    /*background-color: #000000; /* Fundo branco para o formulário */
+    /*padding: 20px;
+    border-radius: 10px; /* Borda arredondada */
+    /*box-shadow: 0 0 10px rgb(78, 66, 66); /* Sombra para o formulário */
+/*} */
+
+@media(max-width: 768px){
+    .footer-navigation{
+        display: block;
+    }
+
+    nav{
+        display: none;
+    }
+
+    #banner{
+        background-position: 50%;
+        background-image: url('estilos/elenco/banner_responsivo.jpg');
+    }
+
+    #trailer-container{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trailer{
+        width: 100%;
+    }
+
+    #sinopse{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .description{
+        width: 100%;
+    }
+
+    .button{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .cards-content{
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+    }
+
+    .star {
+        width: 20px;
+        /*background-color: rgb(34, 34, 34);*/
+    }
+    
+    .coment .user{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-bottom: 15px;
+    }
+    
+    .coments {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 980px;
+        margin: 0 auto;
+        grid-gap: 40px;
+    }
+    
+    .coment {
+        background-color: rgb(14, 14, 14);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 35px 40px;
+        margin-top: 15px;
+        /*box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.185);*/
+    }
+    
+    .coments h3 {
+        font-family: 'Kdam Thmor Pro', sans-serif;
+        margin-bottom: 5px;
+    }
+    
+    .name_coment {
+        color: white;
+        background-color: rgb(37, 37, 37);
+        margin-top: 20px;
+        text-align: center;
+        font-size: 18px;
+        font-family: 'Kdam Thmor Pro', sans-serif;
+    }
+
+    #ep_titulo {
+        margin-top: 20px;
+        border-left: #FF6400 4px solid;
+        margin-left: 10px;
+        padding-left: 10px;
+        font-size: 24px;
+        color: white;
+        font-family: 'Kdam Thmor Pro', sans-serif;
+        transition: .5s;
+    }
+
+    #ep_titulo:hover {
+        border-left: #FF6400 6px solid;
+        font-size: 28px;
+        transition: .5s;
+    }
+
+    .titulo_temp {
+        border-left: #FF6400 4px solid;
+        margin-left: 20px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        padding-left: 10px;
+        font-size: 24px;
+        color: white;
+        font-family: 'Kdam Thmor Pro', sans-serif;
+        transition: .5s;
+    }
+
+    .titulo_temp:hover {
+        border-left: #FF6400 6px solid;
+        font-size: 28px;
+        margin-bottom: 20px;
+        transition: .5s;
+    }
+
+    .episodios-container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        border-bottom: #c7c9c8;
+        border-width: 2px;
+        border-style: solid;
+        padding: 10px;
+        transition: 1s;
+        margin-bottom: 20px;
+    }
+
+    .episodios-container:hover {
+        height: auto;
+        width: 100%;
+        transition: 1s;
+    }
+
+    .numero_ep {
+        color: #c7c7c7;
+        font-size: 24px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .episodio-info {
+        color: #ffffff;
+        margin-top: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .imagem_ep {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .descricao {
+        margin-top:7px;
+        font-size: 18px;
+        color: #c7c7c7;
+        text-align: justify;
+    }
+
+    .titulo {
+        display: none;
+        width: 50%;
+    }
+
+    #save-btn {
+        width: 8em;
+    }
+
+    .button_menor {
+        margin-left: 0px;
+    }
+}

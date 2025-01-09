@@ -1,0 +1,45 @@
+<%- include('cabecalho_form') %>
+
+    <div class="titulo">
+        Realizar login
+    </div>
+    <form class="form" action="/login" method="POST">
+  <!--  <div class="form-group-menor">
+            <label for="nome">ID</label>
+            <input
+                type="text"
+                class="form-control"
+                id="id"
+                name="id"
+                readonly="readonly"
+            />
+        </div>   -->
+
+        
+        <div class="form-group-menor">
+            <label for="email">E-mail</label>
+            <input
+                type="text"
+                class="form-control"
+                id="email"
+                name="email"
+                required
+            />
+        </div>
+        <div class="form-group-menor">
+            <label for="senha">Senha</label>
+            <input
+                type="password"
+                class="form-control"
+                id="senha"
+                name="senha"
+                required
+            />
+        </div>
+        
+        <button id="save-btn" type="submit" class="btn btn-primary">Salvar</button>
+        <a href="/cadastro_usuario" class="sublinhado"><p class="p">Não tem login? Cadastre-se</p></a>
+    </form>
+
+
+<%- include('rodape') %>

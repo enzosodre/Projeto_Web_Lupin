@@ -1,0 +1,34 @@
+<%- include('cabecalho_form') %>
+
+    <div class="container mt-5">
+        <div class="titulo">
+            Editar Usuário
+        </div>
+    <form class="form" action="/editar_usuario" method="POST">
+
+      <div class="form-group">
+          <label for="nome">ID</label>
+          <input type="text" class="form-control" id="id" name="id" value="<%= usuarios.id %>" readonly="readonly" >
+      </div>  
+
+        <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" class="form-control" id="nome" name="nome" value="<%= usuarios.nome %>" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" class="form-control" id="email" name="email" value="<%= usuarios.email %>" required>
+        </div>
+        <div class="form-group">
+            <label for="senha">Senha</label>
+            <input type="password" class="form-control" id="senha" name="senha" value="<%= usuarios.senha %>" required>
+        </div>
+        <div>
+            <label for="cep">Cep</label>
+            <input type="number" class="form-control" id="cep" name="cep" value="<%= usuarios.cep %>" required>
+        </div>
+        <button id="save-btn" type="submit" class="btn btn-primary">Salvar</button>
+    </form>
+</div>
+
+<%- include('rodape') %>

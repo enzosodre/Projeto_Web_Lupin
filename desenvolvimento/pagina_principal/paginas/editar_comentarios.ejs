@@ -1,0 +1,24 @@
+<%- include('cabecalho_form') %>
+
+  <div class="container mt-5">
+    <div class="titulo">
+      Editar comentário
+  </div>
+      <form class="form" action="/editar_comentarios" method="POST">
+
+  <!--  <div class="form-group">
+            <label for="nome">ID</label>
+            <input type="text" class="form-control" id="id" name="id" value="<%= comentarios.id %>" readonly="readonly" >
+        </div>  -->
+          <input type="hidden" class="form-control" id="id" name="id" value="<%= comentarios.id %>" >
+          
+          <div class="form-group">
+              <label for="conteudo">Conteúdo</label>
+              <input type="text" class="form-control" id="conteudo" name="conteudo" value="<%= comentarios.conteudo %>" required>
+          </div>
+          <button id="save-btn" type="submit" class="btn btn-primary">Salvar</button>
+      </form>
+  </div>
+
+
+  <%- include('rodape') %>

@@ -1,0 +1,41 @@
+<footer> <!-- Rodapé da página -->
+    <a href="/index"><img style="object-fit: contain;" id="logo" src="/estilos/logo_lupin.png" alt="imagem do logo do Lupin"></a> <!-- Logo do Lupin -->
+    <span>Todos os direitos reservados ©</span> <!-- Direitos autorais -->
+    <span>Desenvolvido por: Enzo</span> <!-- Créditos de desenvolvimento -->
+    
+    <nav class="footer-navigation"> <!-- Barra de navegação do rodapé -->
+        <ul class="footer-list"> <!-- Lista não ordenada de links de navegação -->
+            <li><a href="/index">Home</a></li> <!-- Link para a página inicial -->
+            <li>
+                <select id="temporada" onchange="changeSeason()"> <!-- Menu suspenso para seleção de temporada -->
+                    <option>Temporada</option> <!-- Opção padrão -->
+                    <option value="/temporada1">Temporada 1</option> <!-- Opção para a temporada 1 -->
+                    <option value="/temporada2">Temporada 2</option> <!-- Opção para a temporada 2 -->
+                    <option value="/temporada3">Temporada 3</option> <!-- Opção para a temporada 3 -->
+                </select>
+            </li>
+            <li><a href="/elenco">Elenco</a></li> <!-- Link para a página do elenco -->
+            <li><a href="/comentarios">Comentários</a></li> <!-- Link para a página de comentários -->
+            <li><a href="/endereco">Brinde</a></li> <!-- Link para a página de cadastro -->
+            <% if (locals.usuario) { %> <!-- Verifica se há um usuário na sessão -->
+                <% if (locals.usuario.isAdmin) { %>
+                    <li><a href="/listar_usuario">Usuários</a></li>
+             <% } %>
+                <li><a href="/logout">Sair</a></li> <!-- Exibe o link de logout -->
+            <% } else { %>
+                <li><a href="/login">Login</a></li>
+            <% } %>
+        </ul>
+    </nav>
+</footer>
+<script>
+    function changeSeason() {
+        const season = document.getElementById('temporada').value;
+        if (season) {
+            window.location.href = season;
+        }
+    }
+</script>
+<script src="/script.js"></script> <!-- Importa um arquivo JavaScript externo -->
+</body>
+</html>

@@ -1,0 +1,64 @@
+<%- include('cabecalho_form') %>
+
+    <div class="titulo">
+        Cadastro de Usuário
+    </div>
+    <!-- <h1>Cadastro de Usuário</h1> -->
+    <form class="form" class="titulo" action="/cadastro_usuario" method="POST">
+  <!--  <div class="form-group-menor">
+            <label for="nome">ID</label>
+            <input
+                type="text"
+                class="form-control"
+                id="id"
+                name="id"
+                readonly="readonly"
+            />
+        </div>  -->
+
+        <div class="form-group-menor">
+            <label for="nome">Nome</label>
+            <input
+                type="text"
+                class="form-control"
+                id="nome"
+                name="nome"
+                required
+            />
+        </div>
+        <div class="form-group-menor">
+            <label for="email">E-mail</label>
+            <input
+                type="text"
+                class="form-control"
+                id="email"
+                name="email"
+                required
+            />
+        </div>
+        <div class="form-group-menor">
+            <label for="senha">Senha</label>
+            <input
+                type="password"
+                class="form-control"
+                id="senha"
+                name="senha"
+                required
+            />
+        </div>
+        <div class="form-group-menor">
+            <label for="cep">Cep</label>
+            <input 
+            type="text"
+            class="form-control"
+            id="cep"
+            name="cep"
+            required
+            />
+        </div>
+        <button id="save-btn" type="submit" class="btn btn-primary">Salvar</button>
+        <!--<a href="/listar_usuario" class="sublinhado"><p class="p">Visualização de todos os usuários</p></a>-->
+    </form>
+
+
+<%- include('rodape') %>

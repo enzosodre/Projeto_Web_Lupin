@@ -1,0 +1,33 @@
+<%- include('cabecalho') %>
+    
+    <div id="banner"></div> <!-- Espaço reservado para um banner -->
+    <div class="titulo">
+        Trailer oficial
+    </div>
+    <div id="trailer-container"> <!-- Contêiner para o trailer oficial -->
+        <div class="content">
+            <video controls class="trailer"> <!-- Vídeo do trailer com controles de reprodução -->
+                <source src="estilos/Lupin _ Trailer oficial _ Netflix.mp4" type="video/mp4"> <!-- Fonte do vídeo -->
+                Seu navegador não possui suporte para vídeos <!-- Mensagem de fallback -->
+            </video>
+            <div id="sinopse"> <!-- Seção para a sinopse da série -->
+                <p class="description"> <!-- Parágrafo de descrição -->
+                    Inspirado pelas aventuras de Arsène Lupin, o ladrão gentil Assane Diop quer se vingar de uma família rica por uma injustiça cometida contra o pai dele. Assista o quanto quiser. O vencedor do Emmy Louis Leterrier dirige esta série estrelada por Omar Sy (Intocáveis).
+                </p>
+                <a href="https://www.netflix.com/br/" target="_blank"><button class="button">Assistir agora</button></a> <!-- Botão para assistir ao vídeo -->
+            </div>
+        </div>
+    </div>
+
+    <div class="titulo">
+        Elenco principal
+    </div>
+    <div class="actor-cards-container"> <!-- Contêiner para os cards dos atores -->
+        <div class="cards-content">
+            <div class="card banner-1">Assane Diop - Omar Sy</div> <!-- Card do Assane Diop -->
+            <div class="card banner-2">Claire Laurent - Ludivine Sagnier</div> <!-- Card da Claire Laurent -->
+            <div class="card banner-3">Hubert Pellegrini - Hervé Pierre</div> <!-- Card do Hubert Pellegrini -->
+        </div>
+    </div>
+
+<%- include('rodape') %>

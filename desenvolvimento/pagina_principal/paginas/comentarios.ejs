@@ -1,0 +1,17 @@
+<%- include('cabecalho_form') %>
+
+<ul class="list-group">
+    <% for(let i = 0; i < comentariosResultado.length; i++) { %>
+    <li class="list-group-item fonte">
+      <%= comentariosResultado[i].id %> - <%= comentariosResultado[i].conteudo %> 
+      <p class="p_branco">Por: <%= comentariosResultado[i].autor %></p> <!-- Ajuste para mostrar o autor do comentário -->
+      <% if (isAdmin) { %>
+        <a href="/editar_comentarios/<%= comentariosResultado[i].id %>" class="button_menor">Editar</a> 
+        <a href="/excluir_comentarios/<%= comentariosResultado[i].id %>" class="button_menor">Apagar</a>
+      <% } %>
+    </li><br>
+    <% } %>
+    <a href="/comentar" class="sublinhado"><p class="p">Faça o seu comentário!</p></a>
+</ul>
+
+<%- include('rodape') %>
