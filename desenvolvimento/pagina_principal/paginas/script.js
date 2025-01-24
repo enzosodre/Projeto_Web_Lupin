@@ -1,4 +1,22 @@
 document.addEventListener("DOMContentLoaded", function() {
+
+    // Tentativa de inserção do VLibras
+
+    new window.VLibras.Widget({
+        //'https://vlibras.gov.br/app' não alterar esse
+        avatar: 'icaro', // Escolha do avatar
+        position: 'bottom-right', // Posição do widget
+        opacity: 1.0 // Opacidade do widget
+    });
+
+// Fim da tentativa de inserção do VLibras
+
+    //new.window.VLibras.Widget({
+        //avatar: 'icaro',
+        //position: 'bottom-right',
+        //opacity: 1.0
+    //}).init()
+
     document.getElementById('fotos').addEventListener('click', function(event) {
         event.preventDefault();
         document.getElementById('imagem-container').style.display = 'block';
